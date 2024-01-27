@@ -1,0 +1,14 @@
+pipeline {
+agent { level 'agent'}
+tools{
+  jdk 'java17'
+  maven 'maven3'
+}
+stages{
+  stages("Clean Workspace"){
+        steps {
+        cleanWs()
+        }
+}
+}
+}
