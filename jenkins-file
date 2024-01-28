@@ -21,4 +21,6 @@ stage("Checkout from SCM"){
             steps {
                 sh "mvn clean package"
             }
-
+}
+}
+}
